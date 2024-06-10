@@ -59,7 +59,7 @@ publishing{
         create<MavenPublication>("maven") {
             groupId = "com.github.abanoub92"
             artifactId = "EasyStepper"
-            version = "0.2.0"
+            version = "0.3.0"
             pom {
                 description.set("First Release")
             }
