@@ -25,23 +25,18 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "17"
-    }
-    java {
-        toolchain {
-            JavaLanguageVersion.of(17)
-        }
+        jvmTarget = "11"
     }
 }
 
 dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.12.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -59,9 +54,9 @@ publishing{
         create<MavenPublication>("maven") {
             groupId = "com.github.abanoub92"
             artifactId = "EasyStepper"
-            version = "0.3.0"
+            version = "0.4.0"
             pom {
-                description.set("First Release")
+                description.set("Fix bugs")
             }
         }
     }
